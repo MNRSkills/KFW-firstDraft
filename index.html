@@ -11,10 +11,14 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>KFW Realtor</title>
   </head>
   <body>
-    <section class="header">
+    <header class="header">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">KFW</a>
         <button
@@ -36,10 +40,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#aboutMe">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">People Say</a>
@@ -50,32 +54,38 @@
       <div class="hero">
         <h1 class="title container">Buy and Sell with Me</h1>
       </div>
+    </header>
+    <section class="jumbotron">
+      <div class="container howItWorks">
+        <h1 class="title">How It Works</h1>
+        <div class="row">
+          <div class="col-md">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h3 class="subtitle">Find Property</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+              nulla cumque, non qui iusto placeat quo incidunt suscipit fuga
+              amet.
+            </p>
+          </div>
+          <div class="col-md">
+            <h3 class="subtitle">Buy Property</h3>
+            <p>
+              Veritatis a blanditiis beatae minima, provident suscipit
+              reprehenderit soluta necessitatibus?
+            </p>
+          </div>
+          <div class="col-md">
+            <h3 class="subtitle">Make Investment</h3>
+            <p>
+              Veritatis a blanditiis beatae minima, provident suscipit
+              reprehenderit soluta necessitatibus?
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="howItWorks jumbotron">
-      <h1 class="container">How It Works</h1>
-      <div class="card">
-        <h3>Find Property</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi nulla
-          cumque, non qui iusto placeat quo incidunt suscipit fuga amet.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Buy Property</h3>
-        <p>
-          Veritatis a blanditiis beatae minima, provident suscipit reprehenderit
-          soluta necessitatibus?
-        </p>
-      </div>
-      <div class="card">
-        <h3>Make Investment</h3>
-        <p>
-          Veritatis a blanditiis beatae minima, provident suscipit reprehenderit
-          soluta necessitatibus?
-        </p>
-      </div>
-    </section>
-    <section class="about container">
+    <section class="about container" id="aboutMe">
       <div class="card text-left">
         <img class="card-img-top" src="holder.js/100px180/" alt="" />
         <div class="card-body">
@@ -90,14 +100,14 @@
       </p>
     </section>
 
-    <section class="services jumbotron">
+    <section class="services jumbotron" id="services">
       <div class="container">
         <div class="row">
           <h1 class="col">Services</h1>
         </div>
         <div class="row">
           <div class="card col-lg">
-            <h4>Search Property</h4>
+            <h4 class="subtitle">Search Property</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
               et debitis quia facere dicta distinctio perspiciatis animi, at sed
@@ -106,7 +116,7 @@
             </p>
           </div>
           <div class="card col-lg">
-            <h4>Buy Property</h4>
+            <h4 class="subtitle">Buy Property</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
               et debitis quia facere dicta distinctio perspiciatis animi, at sed
@@ -115,7 +125,7 @@
             </p>
           </div>
           <div class="card col-lg">
-            <h4>Invest a Home</h4>
+            <h4 class="subtitle">Invest a Home</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
               et debitis quia facere dicta distinctio perspiciatis animi, at sed
@@ -124,7 +134,7 @@
             </p>
           </div>
           <div class="card col-lg">
-            <h4>Post Properties</h4>
+            <h4 class="subtitle">Post Properties</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
               et debitis quia facere dicta distinctio perspiciatis animi, at sed
@@ -133,7 +143,7 @@
             </p>
           </div>
           <div class="card col-lg">
-            <h4>Property Locator</h4>
+            <h4 class="subtitle">Property Locator</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
               et debitis quia facere dicta distinctio perspiciatis animi, at sed
@@ -142,7 +152,7 @@
             </p>
           </div>
           <div class="card col-lg">
-            <h4>Stated Apps</h4>
+            <h4 class="subtitle">Stated Apps</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
               et debitis quia facere dicta distinctio perspiciatis animi, at sed
@@ -153,7 +163,7 @@
         </div>
       </div>
     </section>
-    <section class="jumbotron">
+    <section class="container">
       <h1>People Say...</h1>
       <p>
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus,
@@ -188,7 +198,32 @@
           <input type="textarea" placeholder="Message" />
         </form>
       </div>
+      <div class="media">
+        <ul>
+          <li>facebook</li>
+          <li>Twitter</li>
+          <li>Real Estate Listing</li>
+        </ul>
+      </div>
     </section>
+    <footer>
+      <ul class="footer">
+        <li class="footer-link">
+          <a class="nav-link" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutMe">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">People Say</a>
+        </li>
+      </ul>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
