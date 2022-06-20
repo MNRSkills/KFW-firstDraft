@@ -82,6 +82,16 @@ h1{
   text-align: left;
 }
 
+.service{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.service p{
+  margin-top: 20px;
+  line-height: 2em;
+}
+
 .testimonial img{
   width: 100px;
   border-radius: 50%;
