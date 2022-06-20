@@ -15,6 +15,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script
+      src="https://kit.fontawesome.com/65eabb10a8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>KFW Realtor</title>
   </head>
   <body>
@@ -46,7 +50,7 @@
               <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">People Say</a>
+              <a class="nav-link" href="#peopleSay">People Say</a>
             </li>
           </ul>
         </div>
@@ -55,6 +59,8 @@
         <h1 class="title container">Buy and Sell with Me</h1>
       </div>
     </header>
+
+    <!-- CALL TO ACTION PITCHES -->
     <section class="jumbotron">
       <div class="container howItWorks">
         <h1 class="title">How It Works</h1>
@@ -69,6 +75,7 @@
             </p>
           </div>
           <div class="col-md">
+            <i class="fa-solid fa-magnifying-glass"></i>
             <h3 class="subtitle">Buy Property</h3>
             <p>
               Veritatis a blanditiis beatae minima, provident suscipit
@@ -76,6 +83,7 @@
             </p>
           </div>
           <div class="col-md">
+            <i class="fa-solid fa-dollar-sign"></i>
             <h3 class="subtitle">Make Investment</h3>
             <p>
               Veritatis a blanditiis beatae minima, provident suscipit
@@ -85,21 +93,28 @@
         </div>
       </div>
     </section>
+
+    <!-- ABOUT SECTION -->
     <section class="about container" id="aboutMe">
-      <div class="card text-left">
-        <img class="card-img-top" src="holder.js/100px180/" alt="" />
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Body</p>
+      <div class="row">
+        <div class="card text-left col-md">
+          <img class="card-img-top" src="./images/KFW_image.jpg" alt="" />
+          <div class="card-body">
+            <h4 class="card-title">Real Estate Agent</h4>
+            <p class="card-text"><strong>Kenneth Flores Wills</strong> assisting you in finding the next home, or investment. </p>
+          </div>
+        </div>
+        <div class="card col-md pitch">
+          <h1>Why should hire me</h1>
+          <p>
+            Veritatis a blanditiis beatae minima, provident suscipit
+            reprehenderit soluta necessitatibus?
+          </p>
         </div>
       </div>
-      <h1>Why should hire me</h1>
-      <p>
-        Veritatis a blanditiis beatae minima, provident suscipit reprehenderit
-        soluta necessitatibus?
-      </p>
     </section>
 
+    <!-- SERVICES SECTION -->
     <section class="services jumbotron" id="services">
       <div class="container">
         <div class="row">
@@ -163,7 +178,9 @@
         </div>
       </div>
     </section>
-    <section class="container">
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="testimonial container">
       <h1>People Say...</h1>
       <p>
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus,
@@ -176,34 +193,38 @@
       </p>
       <img src="./images/Gradient slack 2.jpeg" class="img" alt="" />
     </section>
+
+    <!-- CONTACT SECTION -->
     <section class="jumbotron">
-      <h1>Contact</h1>
-      <div class="container text-left">
-        <form action="">
-          <div class="row">
-            <div class="col-md">
-              <label for="">First Name</label>
-              <input type="text" placeholder="First Name" />
+      <h1 class="text-center">Contact</h1>
+      <div class="container">
+        <div class="text-left row">
+          <form action="" class="col-md">
+            <div class="row">
+              <div class="col-md">
+                <label for="">First Name</label>
+                <input type="text" placeholder="First Name" />
+              </div>
+              <div class="col-md">
+                <label for="">Last Name</label>
+                <input type="text" placeholder="Last Name" />
+              </div>
             </div>
-            <div class="col-md">
-              <label for="">Last Name</label>
-              <input type="text" placeholder="Last Name" />
-            </div>
+            <label for="">Email</label>
+            <input type="text" placeholder="Email" />
+            <label for="">Subject</label>
+            <input type="text" placeholder="Subject" />
+            <label for="">Message</label>
+            <input type="textarea" placeholder="Message" />
+          </form>
+          <div class="media col-md">
+            <ul class="">
+              <li>facebook</li>
+              <li>Twitter</li>
+              <li>Real Estate Listing</li>
+            </ul>
           </div>
-          <label for="">Email</label>
-          <input type="text" placeholder="Email" />
-          <label for="">Subject</label>
-          <input type="text" placeholder="Subject" />
-          <label for="">Message</label>
-          <input type="textarea" placeholder="Message" />
-        </form>
-      </div>
-      <div class="media">
-        <ul>
-          <li>facebook</li>
-          <li>Twitter</li>
-          <li>Real Estate Listing</li>
-        </ul>
+        </div>
       </div>
     </section>
     <footer>

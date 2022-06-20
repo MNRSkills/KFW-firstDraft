@@ -2,14 +2,13 @@ body {
   color: #fcba03;
 }
 
-body img {
-  width: 100px;
-  border-radius: 50%;
-}
-
 section {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.jumbotron{
+  margin: 0;
 }
 
 .header {
@@ -39,12 +38,6 @@ nav {
   align-items: center;
 }
 
-/* .title {
-  font-weight: bold;
-  text-align: center;
-  color: #fcba03;
-} */
-
 h1{
   font-weight: bold;
   text-align: center;
@@ -61,6 +54,32 @@ h1{
   text-align: center;
   padding-top: 20px;
   padding-bottom: 70px;
+}
+
+.howItWorks p{
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.about img{
+  /* max-width: 375px; */
+  width: 100%;
+}
+
+.pitch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pitch p{
+  max-width: 60%;
+  text-align: left;
+}
+
+.testimonial img{
+  width: 100px;
+  border-radius: 50%;
 }
 
 form input {
