@@ -7,7 +7,7 @@ section {
   margin-bottom: 0;
 }
 
-.jumbotron{
+.jumbotron {
   margin: 0;
 }
 
@@ -23,6 +23,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -38,17 +39,17 @@ nav {
   align-items: center;
 }
 
-h1{
+h1 {
   text-transform: capitalize;
   font-weight: bold;
   text-align: center;
   color: #fcba03;
 }
 
-.subtitle{
+.subtitle {
   font-weight: 300;
   text-align: center;
-  color: #343A40;
+  color: #343a40;
 }
 
 .howItWorks h1 {
@@ -57,17 +58,17 @@ h1{
   padding-bottom: 70px;
 }
 
-.howItWorks p{
+.howItWorks p {
   padding: 20px 20px;
   text-align: center;
 }
 
-.about img{
+.about img {
   /* max-width: 375px; */
   width: 100%;
 }
 
-.pitch{
+.pitch {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,24 +78,36 @@ h1{
   text-transform: capitalize;
 } */
 
-.pitch p{
+.pitch p {
   max-width: 60%;
   text-align: left;
 }
 
-.service{
+.service {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.service p{
-  margin-top: 20px;
+.service p {
+  margin-top: 1.9rem;
   line-height: 2em;
 }
 
-.testimonial img{
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial img {
   width: 100px;
   border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.testimonial p {
+  padding: 20px 30px;
 }
 
 form input {
